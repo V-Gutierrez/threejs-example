@@ -46,11 +46,11 @@ pointLight.position.set(5, 5, 5)
 
 scene.add(pointLight, ambientLight)
 
-const background = new THREE.TextureLoader().load('ahevUf.png')
+const background = new THREE.TextureLoader().load('./ahevUf.png')
 
 scene.background = background
 
-const Sphere = new THREE.TextureLoader().load('boxWrapper.png')
+const Sphere = new THREE.TextureLoader().load('./boxWrapper.png')
 const mappedSphere = new THREE.Mesh(
   new THREE.SphereGeometry(3),
   new THREE.MeshBasicMaterial({ map: Sphere })
